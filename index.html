@@ -133,15 +133,17 @@
 }
 
     }
-     input:focus:not(:placeholder-shown){
-  box-shadow:0 0 18px rgba(0,255,102,0.9),
-             0 0 35px rgba(0,255,102,0.6);
+    input:focus:not(:placeholder-shown){
+  box-shadow:0 0 18px rgba(0,255,255,0.95),
+             0 0 35px rgba(0,255,255,0.6);
   transition:0.3s ease;
+      }
+    
+  .panel h2{
+  box-shadow:0 0 18px rgba(0,255,255,0.95),
+             0 0 35px rgba(0,255,255,0.6);
+  text-shadow:0 0 12px rgba(0,255,255,1);
 }
- .panel h2{
-  box-shadow:0 0 18px rgba(0,255,102,0.9),
-             0 0 35px rgba(0,255,102,0.6);
-  text-shadow:0 0 10px rgba(0,255,102,1);
   </style>
 </head>
 
@@ -2553,6 +2555,7 @@ function showMPN(mpn){
 
 </body>
 </html>
+
 
 
 
