@@ -2551,10 +2551,19 @@ function showMPN(mpn){
     height:150
   });
 }
+document.getElementById("mpnInput").addEventListener("input",function(){
+  const val = this.value.trim();
+
+  // Agar exact MPN nahi hai → QR hata do
+  if(!mpnData[val]){
+    document.getElementById("qrOutput").innerHTML="";
+  }
+});
 </script>
 
 </body>
 </html>
+
 
 
 
